@@ -1,6 +1,6 @@
 {
-  "name": "@lunie/cosmos-ledger",
-  "version": "0.0.5",
+  "name": "@rnssolution/color-ledger",
+  "version": "0.1.0",
   "description": "provide simple Ledger tooling for the Cosmos Ledger App with user friendly errors",
   "keywords": [
     "cosmos",
@@ -104,7 +104,7 @@
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^4.61.0",
     "@ledgerhq/hw-transport-webusb": "^4.61.0",
-    "@lunie/cosmos-keys": "^0.0.9",
+    "@rnssolution/color-keys": "^0.1.2",
     "ledger-cosmos-js": "^2.0.2",
     "secp256k1": "^3.7.0",
     "semver": "^6.1.0"

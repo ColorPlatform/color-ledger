@@ -1,5 +1,5 @@
 import App from 'ledger-cosmos-js'
-import { getCosmosAddress } from '@lunie/cosmos-keys'
+import { getCosmosAddress } from '@rnssolution/color-keys'
 import { signatureImport } from 'secp256k1'
 import TransportU2F from '@ledgerhq/hw-transport-u2f'
 const semver = require('semver')
