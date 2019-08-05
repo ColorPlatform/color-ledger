@@ -1,15 +1,15 @@
-# Cosmos Ledger App wrapper
+# Color Ledger App wrapper
 
-This library helps interfacing with Cosmos Ledger App. It provides a developer friendly interface and user friendly error messages.
+This library helps interfacing with Color Ledger App. It provides a developer friendly interface and user friendly error messages.
 
 ## THANK YOU
 
-This library is based on `ledger-cosmos-js` by Juan Leni who implemente the Cosmos Ledger App. Thank you Juan!
+This library is based on `ledger-Color-js` by Juan Leni who implemented the Color Ledger App. Thank you Juan!
 
 ## Install
 
 ```bash
-yarn add @lunie/cosmos-ledger
+yarn add @rnssolution/color-ledger
 ```
 
 ## Usage
@@ -17,30 +17,30 @@ yarn add @lunie/cosmos-ledger
 ### Sign using the Ledger
 
 ```js
-import Ledger from "@lunie/cosmos-ledger"
+import Ledger from "@rnssolution/color-ledger"
 
-const signMessage = ... message to sign, generate messages with "@lunie/cosmos-js"
+const signMessage = ... message to sign, generate messages with "@lunie/Cosmos-js"
 
 const ledger = await Ledger().connect()
 
 const signature = await ledger.sign(signMessage)
 ```
 
-### Using with cosmos-js
+### Using with Color-js
 
 ```js
-import Ledger from "@lunie/cosmos-ledger"
-import Cosmos from "@lunie/cosmos-js"
+import Ledger from "@rnssolution/color-ledger"
+import Color from "@lunie/Cosmos-js"
 
 const privateKey = Buffer.from(...)
 const publicKey = Buffer.from(...)
 
-// init cosmos sender
-const cosmos = Cosmos(STARGATE_URL, ADDRESS)
+// init Color sender
+const Color = Color(STARGATE_URL, ADDRESS)
 
 // create message
-const msg = cosmos
-  .MsgSend({toAddress: 'cosmos1abcd09876', amounts: [{ denom: 'stake', amount: 10 }})
+const msg = Color
+  .MsgSend({toAddress: 'Color1abcd09876', amounts: [{ denom: 'stake', amount: 10 }})
 
 // create a signer from this local js signer library
 const ledgerSigner = async (signMessage) => {
