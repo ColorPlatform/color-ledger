@@ -73,9 +73,9 @@
   resolved "https://registry.yarnpkg.com/@ledgerhq/logs/-/logs-4.61.0.tgz#bbcba49d7a7a4e20d6584bbfc10ed93b212c804c"
   integrity sha512-AObEnA+tgzKEwY306i6FOT/hlc+zjF817Bty/IxG3f2wPJFRK9cJuD3Ijl4pfJP2pt7KubN4YbRGXREXhEsknQ==
 
-"@rnssolution/color-keys@^0.1.2":
+"@colorplatform/color-keys@^0.1.2":
   version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@rnssolution/color-keys/-/color-keys-0.1.2.tgz#e380887e97a82951044e14171a8f61446787ea35"
+  resolved "https://registry.yarnpkg.com/@colorplatform/color-keys/-/color-keys-0.1.2.tgz#e380887e97a82951044e14171a8f61446787ea35"
   integrity sha512-/hroXG9zdQgrJBrPeOKSsSSkvFXVTWq5/Fd7H4xtlif0Q3evUpyJafUwg38retbHSrg+hxXC8oYHJMxUPLYVUg==
   dependencies:
     bech32 "^1.1.3"

@@ -9,7 +9,7 @@ This library is based on `ledger-Color-js` by Juan Leni who implemented the Colo
 ## Install
 
 ```bash
-yarn add @rnssolution/color-ledger
+yarn add @colorplatform/color-ledger
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ yarn add @rnssolution/color-ledger
 ### Sign using the Ledger
 
 ```js
-import Ledger from "@rnssolution/color-ledger"
+import Ledger from "@colorplatform/color-ledger"
 
 const signMessage = ... message to sign, generate messages with "@lunie/Cosmos-js"
 
@@ -29,7 +29,7 @@ const signature = await ledger.sign(signMessage)
 ### Using with Color-js
 
 ```js
-import Ledger from "@rnssolution/color-ledger"
+import Ledger from "@colorplatform/color-ledger"
 import Color from "@lunie/Cosmos-js"
 
 const privateKey = Buffer.from(...)
