@@ -4,7 +4,7 @@ This library helps interfacing with Color Ledger App. It provides a developer fr
 
 ## THANK YOU
 
-This library is based on `ledger-Color-js` by Juan Leni who implemented the Color Ledger App. Thank you Juan!
+This library is based on `ledger-cosmos-js` by Juan Leni who implemented the Cosmos Ledger App. Thank you Juan!
 
 ## Install
 
@@ -19,7 +19,7 @@ yarn add @colorplatform/color-ledger
 ```js
 import Ledger from "@colorplatform/color-ledger"
 
-const signMessage = ... message to sign, generate messages with "@lunie/Cosmos-js"
+const signMessage = ... message to sign, generate messages with "@colorplatformjs/color-api"
 
 const ledger = await Ledger().connect()
 
@@ -29,8 +29,8 @@ const signature = await ledger.sign(signMessage)
 ### Using with Color-js
 
 ```js
-import Ledger from "@colorplatform/color-ledger"
-import Color from "@lunie/Cosmos-js"
+import Ledger from "@colorplatformjs/color-ledger"
+import Color from "@colorplatformjs/color-api"
 
 const privateKey = Buffer.from(...)
 const publicKey = Buffer.from(...)

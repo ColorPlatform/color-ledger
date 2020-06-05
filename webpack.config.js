@@ -1,10 +1,10 @@
 const config = {
   devtool: "cheap-source-map",
-  entry: ['./src/cosmos-ledger.ts'],
+  entry: ['./src/color-ledger.ts'],
   output: {
     path: __dirname + '/lib',
-    filename: 'cosmos-ledger.js',
-    library: 'cosmos-ledger',
+    filename: 'color-ledger.js',
+    library: 'color-ledger',
     libraryTarget: 'umd',
     umdNamedDefine: true,
   },

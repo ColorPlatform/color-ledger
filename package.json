@@ -1,26 +1,26 @@
 {
-  "name": "@colorplatform/color-ledger",
+  "name": "@colorplatformjs/color-ledger",
   "version": "0.1.0",
-  "description": "provide simple Ledger tooling for the Cosmos Ledger App with user friendly errors",
+  "description": "JS frontend to the Color Ledger app",
   "keywords": [
-    "cosmos",
-    "cosmos.network",
-    "cosmos wallet",
-    "cosmos signer",
+    "color",
+    "color platform",
+    "color wallet",
+    "color signer",
     "ledger",
-    "cosmos javascript",
-    "cosmos sdk",
-    "cosmos-sdk"
+    "color javascript",
+    "color sdk",
+    "color-sdk"
   ],
-  "main": "lib/cosmos-ledger.js",
-  "typings": "lib/types/cosmos-ledger.d.ts",
+  "main": "lib/color-ledger.js",
+  "typings": "lib/types/color-ledger.d.ts",
   "files": [
     "lib"
   ],
-  "author": "Fabian Weber <fabian@tendermint.com>",
+  "author": "Based on the work of Fabian Weber <fabian@tendermint.com> by Color Platform https://color-platform.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/luniehq/cosmos-ledger.git"
+    "url": "https://github.com/colorplatform/color-ledger.git"
   },
   "license": "MIT",
   "engines": {
@@ -104,7 +104,7 @@
   "dependencies": {
     "@ledgerhq/hw-transport-u2f": "^4.61.0",
     "@ledgerhq/hw-transport-webusb": "^4.61.0",
-    "@colorplatform/color-keys": "^2.0.3",
+    "@colorplatformjs/color-keys": "2.0.3-rc",
     "ledger-cosmos-js": "^2.0.2",
     "secp256k1": "^3.7.0",
     "semver": "^6.1.0"

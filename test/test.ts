@@ -1,4 +1,4 @@
-import Ledger from '../src/cosmos-ledger'
+import Ledger from '../src/color-ledger'
 
 jest.mock('secp256k1', () => ({
   signatureImport: () => Buffer.from('1234')
@@ -25,7 +25,7 @@ describe(`Ledger`, () => {
   describe('connect', () => {
     it('connects', async () => {
       jest.resetModules()
-      jest.doMock('ledger-cosmos-js', () => ({
+      jest.doMock('ledger-color-js', () => ({
         App: class MockApp {
           publicKey() {
             return {
@@ -71,7 +71,7 @@ describe(`Ledger`, () => {
 
     it("fails if can't get data from device", async () => {
       jest.resetModules()
-      jest.doMock('ledger-cosmos-js', () => ({
+      jest.doMock('ledger-color-js', () => ({
         App: class MockApp {
           publicKey() {
             return {
@@ -91,7 +91,7 @@ describe(`Ledger`, () => {
 
     it('fails if Cosmos App is outdated', async () => {
       jest.resetModules()
-      jest.doMock('ledger-cosmos-js', () => ({
+      jest.doMock('ledger-color-js', () => ({
         App: class MockApp {
           publicKey() {
             return {
@@ -122,7 +122,7 @@ describe(`Ledger`, () => {
 
     it('fails if Ledger device is locked', async () => {
       jest.resetModules()
-      jest.doMock('ledger-cosmos-js', () => ({
+      jest.doMock('ledger-color-js', () => ({
         App: class MockApp {
           publicKey() {
             return {
